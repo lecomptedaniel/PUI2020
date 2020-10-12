@@ -1,0 +1,500 @@
+/****** Removing Borders ******/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+
+
+/*******************************************/
+/******** Organization ************/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: #2E2E2E;
+  align-content: space-between;
+  align-items: center;
+}
+
+.BodyContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: #2E2E2E; /*linear-gradient(180deg, rgba(44, 89, 45, 0.75) 0%, rgba(44, 89, 45, 0) 100%);*/
+  align-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  text-align: center;
+  /**grid: repeat(8, 1fr) / repeat(12, 1fr);**/
+}
+
+
+
+
+/*******************************************/
+/*********** Font Styles *******/
+.MainFont {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.MainHeaderFont {
+  font-family: Epilogue;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin: 10px;
+}
+
+
+/*******************************************/
+/******* Nav Section *******/
+.RightFlex {
+  display: flex;
+  background-color: #363636;
+}
+
+.Nav {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  z-index:5;
+}
+
+.Menu {
+  padding: 20px;
+  margin-left: 10vw;
+}
+
+.Title {
+  font-family: Epilogue;
+  font-style: normal;
+  color: white;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 43px;
+  letter-spacing: 0.05em;
+  flex-grow: 2;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Navbutton {
+  background-color: #2E2E2E;
+  border: none;
+  text-decoration-color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  list-style-type: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.Navbutton:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+}
+
+.HomeButton {
+  background-color: #2E2E2E;
+  border: none;
+  text-decoration-color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  list-style-type: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.HomeButton:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+}
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+.NavLinks {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.ProfileButton {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin: 10px 40px;
+  list-style-type: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.ProfileButton:hover{
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6)
+}
+
+
+
+
+/*******************************************/
+/*************** Upper Body ****************/
+.UpperBody {
+  width: 100vw;
+  height: 200px;
+  background-color: #2E2E2E;
+}
+
+.Search {
+  background: #363636;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 10px 10px;
+}
+
+.SearchCart {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.CartButton {
+  border: none;
+  text-decoration-color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  cursor: pointer;
+  list-style-type: none;
+  background: #3F84A2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 10px 10px;
+}
+
+.CartButton:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+}
+
+.UpperBody input[type=text] {
+  padding: 6px;
+  margin: 15px;
+  border: none;
+  font-size: 17px;
+  background: #3DBA92;
+  text-decoration-color: #fff;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .UpperBody a, .UpperBody input[type=text] {
+    text-align: left;
+    width: 100vw;
+    margin: 0;
+    padding: 14px;
+    }
+  .UpperBody input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+  
+.TitleDiv {
+  text-align:center;
+  flex-grow: 3;
+}
+
+
+
+
+/*******************************************/
+/**************** Main Body ****************/
+.MainBody {
+  background-color: #2E2E2E;
+}
+
+.SplashImage {
+  border-radius: 10px;
+}
+
+.IntroText {
+  background: rgba(85, 85, 85, 0.9);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 20px;
+  width: 460px;
+  height: 245px;
+}
+
+.BackButton {
+  background: #464646;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border-style: none;
+  padding: 7px 9px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+/*******************************************/
+/**********  Product Details Page  *************/
+.ProductView {
+  display:flex;
+  flex-direction: column;
+
+}
+
+.ItemTitle {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.ImageDisplay {
+  width: 475px;
+  height: 350px;
+}
+
+.CarouselItem {
+  position: relative;
+
+}
+
+.ProductText {
+  text-align: left;
+  background: #363636;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#SizeGuide {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-decoration-line: underline;
+  color: white;
+  text-align: right;
+}
+
+.SizeButtons {
+  display: flex;
+  align-items: center;
+}
+
+.ColorButtons {
+  display: flex;
+  align-items: center;
+}
+
+.ItemButton {
+  border: 2px solid #3E85A3;
+  background-color: white;
+  color: #3E85A3;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  list-style-type: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition-duration: 0.3s;
+}
+
+.ItemButton:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+  color: white;
+  background-color: #3E85A3;
+}
+
+
+
+
+
+
+
+/*******************************************/
+/*******************  Carousel  ******************/
+.Carousel {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.CarouselItem1 {
+  width: 300px;
+  height: 300px;
+}
+
+.CarouselImage1 {
+  object-fit: scale-down;
+}
+
+
+/*******************************************/
+/********************* Browse Items + Filter **********************/
+
+.Browse {
+  display: flex;
+}
+
+
+
+
+/*******************************************/
+/********************* Filter **********************/ 
+
+.Filter {
+  background: #3F84A2;
+  border-radius: 5px;
+  padding: 20px;
+  height: 350px;
+}
+
+.FilterItem {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+
+
+
+
+/*******************************************/
+/********************* Browsable Items **********************/ 
+
+.AllItems {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ItemContainer {
+  text-align: center;
+}
+
+.BrowsableItem {
+  width: 275px;
+  width: 275px;
+  margin: 50px 50px 0px 50px;
+}
+
+.CardInfo {
+  position: relative;
+}
+
+
+.ItemText1 {
+  position: absolute;
+  bottom: 4px;
+  left: 50px;
+  padding: 5px;
+  background: rgba(80, 80, 80, 0.75);
+  border-radius: 0px 5px 0px 0px;
+}
+
+.ItemText2 {
+  position: absolute;
+  bottom: 8px;
+  right: 56px;
+  padding: 3px;
+  background-color: #2E2E2E;
+  border-radius: 10px;
+}
+
+.checked {
+  color: orange;
+}
+
+
+
+/*******************************************/
+/******* Lower Body *******/
+.LowerBody {
+  /*width: 100vw;*/
+  background-color: #2E2E2E;
+  align-items: center;
+}
+
+.MainPageCard {
+  background: rgba(85, 85, 85, 0.9);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.MainCard1 {
+  margin: 30px;
+  padding: 20px;
+  min-width: 300px;
+}
+
+.MainCard2 {
+  margin: 30px;
+  padding: 20px;
+  min-width: 300px;
+}
+
+.MainCard3 {
+  margin: 30px;
+  padding: 20px;
+  min-width: 300px;
+}
+
+.CardButton {
+  border: none;
+  text-decoration-color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  list-style-type: none;
+  background-color: #3E85A3;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+
+
+
+/******* Footer 
+.Footer {
+  width: 100vw;
+  height: 200px;
+  background-color: brown;
+}
+*******/
