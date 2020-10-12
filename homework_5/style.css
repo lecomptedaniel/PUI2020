@@ -91,6 +91,17 @@ color: #FFFFFF;
   flex-grow: 2;
 }
 
+.Title1 {
+  font-family: Epilogue;
+  font-style: normal;
+  color: white;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: 0.05em;
+  flex-grow: 3;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -131,6 +142,7 @@ ul {
 .HomeButton:hover {
   box-shadow: 0 8px 16px rgba(0,0,0,0.6);
 }
+
 a:link {
   text-decoration: none;
   color: white;
@@ -173,11 +185,16 @@ a {
 }
 
 .Search {
+  display:flex;
+  align-items: center;
   background: #363636;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0px 0px 10px 10px;
 }
 
+.SearchIcon {
+  padding: 0px 0px 0px 10px;
+}
 .SearchCart {
   display: flex;
   justify-content: flex-end;
@@ -268,13 +285,12 @@ a {
 .ProductView {
   display:flex;
   flex-direction: column;
-
+  margin: 0px 100px 0px 0px;
 }
 
 .ItemTitle {
   display: flex;
   justify-content: space-between;
-
 }
 
 .ImageDisplay {
@@ -282,9 +298,13 @@ a {
   height: 350px;
 }
 
+.ProductImage {
+  width: 475px;
+  height: 350px;
+}
+
 .CarouselItem {
   position: relative;
-
 }
 
 .ProductText {
@@ -338,6 +358,36 @@ a {
 }
 
 
+.AddToCart {
+  border: none;
+  text-decoration-color: #fff;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  list-style-type: none;
+  background-color: #3E85A3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.AddToCart:hover {
+  transition-duration: 0.3s;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+}
+
+.Quantity {
+  height: 30px;
+  width: 60px;
+}
+
+.Final {
+  display: flex;
+  justify-content: flex-end;
+  margin: 40px 0px 0px 0px;
+}
+
 
 
 
@@ -346,21 +396,23 @@ a {
 /*******************************************/
 /*******************  Carousel  ******************/
 .Carousel {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+  display: flex;
+  height: 300px;
+  justify-content: space-around;
 }
-
 
 .CarouselItem1 {
   width: 300px;
   height: 300px;
+  margin:5px;
 }
 
 .CarouselImage1 {
   object-fit: scale-down;
-}
+  width: 300px;
+  height: 300px;
 
+}
 
 /*******************************************/
 /********************* Browse Items + Filter **********************/
