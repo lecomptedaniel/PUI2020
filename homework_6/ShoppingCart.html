@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Muddy Paws Adventure Gear</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Epilogue&family=Roboto&display=swap" 
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+
+
+    <!--NAVIGATION-->
+    <body>
+        <div class="RightFlex">
+            <img src="Assets/Icons/menu-white-48dp.svg" class="Menu" alt="Menu">
+            <p class="Title">Muddy Paws</p>
+            <ul class="Nav">
+                <li><button class="HomeButton NavLinks"><a href="index.html">Home</a></button></li>
+                <li><button class="Navbutton NavLinks"><a href="BrowseAll.html">Browse All</a></button></li>
+                <li><button class="Navbutton NavLinks"><a href="">Dog</a></button></li>
+                <li><button class="Navbutton NavLinks"><a href="">Cat</a></button></li>
+                <li><button class="Navbutton NavLinks"><a href="">Accessories</a></button></li>
+            </ul> 
+            <img class="ProfileButton" src="Assets/Icons/account_circle-white-48dp.svg" alt="Profile">
+        </div>
+        <div class="UpperBody">
+            <div class="SearchCart">
+                <div class="Search">
+                    <i class="SearchIcon"><img src="Assets/Icons/search-white-24dp.svg" alt="Search"></i>
+                    <!-- change type to "search??"-->
+                    <input type="text" placeholder="Search..">
+                </div>
+                <button class="Navbutton NavLinks CartButton MainFont"><a href="ShoppingCart.HTML">Your Cart</a>
+                <img src="Assets/Icons/shopping_cart-white-24dp.svg" alt="Shopping Cart"><p id="cartCount">0</p></button>
+            </div>
+        </div>
+
+
+        
+        <div class="CartTopper">
+            <button class="BackButton MainFont">
+                <i><img src="Assets/Icons/keyboard_arrow_left-white-18dp.svg" alt="Back Arrow"></i>
+                <a href="BrowseAll.html">Browse</a>
+            </button>
+            <div class="ShoppingCartCenter">
+                <p class="MainHeaderFont">Your Cart</p>
+                <div class="ShoppingCartTimeline">
+                    <p class="MainFont">Cart</p>
+                    <p class="MainFont">Payment</p>
+                    <p class="MainFont">Shipping</p>
+                    <p class="MainFont">Review</p>
+                </div>
+                <!--Place Process/Timeline here!-->
+            </div>
+            <p class="MainFont">Total: $58</p>
+            <a href="Payment.html" class="MainHeaderFont ShoppingButton">Proceed to Payment</a>
+        </div>
+
+
+        <!--CART-->
+        <div class="" id="ShoppingCart">
+            <div class="CartItem">
+                <div class="fill">
+                    <img src="Assets/Images/SpecialBandana.jpg" alt="Special Bandana" width="200" height="200">
+                </div>
+                <div class="CartItemDescription">
+                    <p class="MainHeaderFont">Special Bandana</p>
+                    <div class="container" id="CartItemVariables">
+                        <p class="MainFont">Tiny</p>
+                        <p class="MainFont">Blackcherry</p>
+                        <input type="button" class="CardButton MainFont" value="Change">
+                    </div>
+                    <p>
+                        <label class="MainFont">Quantity</label>
+                        <select id="quant">
+                            <option value = "1">1</option>
+                            <option value = "2">2</option>
+                            <option value = "3">3</option>
+                            <option value = "4">4</option>
+                            <option value = "5">5</option>
+                            <option value = "6">6</option>
+                            <option value = "7">7</option>
+                            <option value = "8">8</option>
+                            <option value = "9">9</option>
+                            <option value = "10">10</option>
+                        </select>
+                        <p class="MainFont">$29</p>
+                    </p>
+                    <div class="container" id="CartItemChange">
+                        <p class="MainFont">Delete</p>
+                        <p class="MainFont">Save for later</p>
+                    </div>
+                </div>
+            </div>
+            <div class="CartItem">
+                <div class="fill">
+                    <img src="Assets/Images/SpecialBandana.jpg" alt="Special Bandana" width="200" height="200">
+                </div>
+                <div class="CartItemDescription">
+                    <p class="MainHeaderFont">Special Bandana</p>
+                    <div class="container" id="CartItemVariables">
+                        <p class="MainFont" id="ItemSize">Tiny</p>
+                        <p class="MainFont" id="ItemColor">Blackcherry</p>
+                        <input type="button" class="CardButton MainFont" value="Change">
+                    </div>
+                    <p>
+                        <label class="MainFont">Quantity</label>
+                        <select id="quant">
+                            <option value = "1">1</option>
+                            <option value = "2">2</option>
+                            <option value = "3">3</option>
+                            <option value = "4">4</option>
+                            <option value = "5">5</option>
+                            <option value = "6">6</option>
+                            <option value = "7">7</option>
+                            <option value = "8">8</option>
+                            <option value = "9">9</option>
+                            <option value = "10">10</option>
+                        </select>
+                        <p class="MainFont" id="ItemTotal">$29</p>
+                    </p>
+                    <div class="container" id="CartItemChange">
+                        <p class="MainFont">Delete</p>
+                        <p class="MainFont">Save for later</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        <!-- <div class="Footer container"></div> -->
+
+
+        <div class="Footer">
+            <div class="EmailSignUp">
+                <p class="MainFont">Sign up for Muddy Emails</p>
+                <p class="MainFont">Outdoor events, deals and stories</p>
+                <label for="email" form="emailForm" class="MainFont"></label>
+                <input type="email" placeholder="Enter your email address" id="email">
+                <!--<label for="emailSubmission" form="emailForm"></label>-->
+                <input type="submit" class="CardButton MainFont" value="Sign me up!" id="emailSubmission">
+            </div>
+            <div class="FooterActual">
+                <div class="FooterPages">
+                    <p class="MainHeaderFont"></p>
+                    <a class="FooterFont" href="">About</a>
+                    <a class="FooterFont" href="">Blog</a>
+                    <a class="FooterFont" href="">Careers</a>
+                    <a class="FooterFont" href="">Affiliate Program</a>
+                    <a class="FooterFont" href="">Site Map</a>
+                </div>
+                <div class="FooterPages">
+                    <p class="MainHeaderFont"></p>
+                    <a class="FooterFont" href="">Browse All</a>
+                    <a class="FooterFont" href="">Dog</a>
+                    <a class="FooterFont" href="">Cat</a>
+                    <a class="FooterFont" href="">Accessories</a>
+                    <a class="FooterFont" href="">Flyer</a>
+                    <a class="FooterFont" href="">Deals</a>
+                </div>
+                <div class="FooterPages">
+                    <p class="MainHeaderFont"></p>
+                    <a class="FooterFont" href="">Help/FAQ</a>
+                    <a class="FooterFont" href="">Shipping</a>
+                    <a class="FooterFont" href="">Returns & Exchanges</a>
+                    <a class="FooterFont" href="">Find a Store</a>
+                    <a class="FooterFont" href="">Contact Us</a>
+                    <a class="FooterFont" href="">Feedback</a>
+                    <a class="FooterFont" href=""></a>
+                </div>
+                <div class="FooterPages">
+                    <p class="MainHeaderFont"></p>
+                    <a class="FooterFont" href="">Privacy Policy</a>
+                    <a class="FooterFont" href="">Terms & Conditions</a>
+                    <a class="FooterFont" href="">Return Policy</a>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

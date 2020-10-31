@@ -1,0 +1,803 @@
+/****** Removing Borders ******/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+/*******************************************/
+/******** Organization ************/
+.container {
+  display: flex;
+  justify-content: space-around;
+  background: #2E2E2E;
+  align-content: space-between;
+  align-items: center;
+}
+
+.BodyContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #2E2E2E; /*linear-gradient(180deg, rgba(44, 89, 45, 0.75) 0%, rgba(44, 89, 45, 0) 100%);*/
+  align-content: space-between;
+  align-items: center;
+  text-align: center;
+  /**grid: repeat(8, 1fr) / repeat(12, 1fr);**/
+}
+
+.FlexRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: #2E2E2E; /*linear-gradient(180deg, rgba(44, 89, 45, 0.75) 0%, rgba(44, 89, 45, 0) 100%);*/
+  align-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+/*******************************************/
+/******** Image Stuff ************/
+
+
+.fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.fill img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+
+/*******************************************/
+/*********** Font Styles *******/
+.MainFont {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.MainHeaderFont {
+  font-family: Epilogue;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin: 10px;
+}
+
+
+/*******************************************/
+/******* Nav Section *******/
+
+/* Media queries based on the width of the screen 
+minimum 1200px -- and below that perhaps pick and choose what menu items to display or make them smaller etc.
+*/
+.RightFlex {
+  display: flex;
+  background-color: #363636;
+  align-items: center;
+}
+
+.Nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  z-index:5;
+}
+
+.Menu {
+  padding-left: 20px;
+  width: 45px;
+  margin-right: 20px;
+}
+
+.WideButton {
+  width: 150px;
+}
+
+.Title {
+  width: 500px;
+  font-family: Epilogue;
+  font-style: normal;
+  color: white;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 43px;
+  letter-spacing: 0.05em;
+  flex-grow: 2;
+}
+
+.Title1 {
+  font-family: Epilogue;
+  font-style: normal;
+  color: white;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: 0.05em;
+  flex-grow: 3;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Navbutton {
+  background-color: #2E2E2E;
+  border: none;
+  text-decoration-color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  list-style-type: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Navbutton:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+}
+
+.HomeButton {
+  background-color: #2E2E2E;
+  border: none;
+  text-decoration-color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  list-style-type: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.HomeButton:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+.NavLinks {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.ProfileButton {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin: 10px 40px;
+  list-style-type: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.ProfileButton:hover{
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6)
+}
+
+
+
+
+/*******************************************/
+/*************** Upper Body ****************/
+.UpperBody {
+  width: 100%;
+  height: 100px;
+  background-color: #2E2E2E;
+}
+
+.Search {
+  display:flex;
+  align-items: center;
+  background: #363636;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 10px 10px;
+}
+
+.SearchIcon {
+  padding: 0px 0px 0px 10px;
+}
+.SearchCart {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.CartButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  text-decoration-color: #fff;
+  padding: 10px 10px 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  cursor: pointer;
+  list-style-type: none;
+  background: #3F84A2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 10px 10px;
+}
+
+.CartButton:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+}
+
+#cartCount {
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  border: 2px solid red;
+  border-radius: 50%;
+  color: red;
+  text-align: center;
+  margin: 5px;
+  font-size: 16px;
+}
+
+.UpperBody input[type=text] {
+  padding: 6px;
+  margin: 15px;
+  border: none;
+  font-size: 17px;
+  background: #3DBA92;
+  text-decoration-color: #fff;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .UpperBody a, .UpperBody input[type=text] {
+    text-align: left;
+    width: 100vw;
+    margin: 0;
+    padding: 14px;
+    }
+  .UpperBody input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+
+/*******************************************/
+/**************** Main Body ****************/
+.MainBody {
+  background-color: #2E2E2E;
+}
+
+.SplashImage {
+  border-radius: 10px;
+}
+
+.IntroText {
+  background: rgba(85, 85, 85, 0.9);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 40px;
+  width: 460px;
+  height: 245px;
+}
+
+.BackButton {
+  background: #464646;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border-style: none;
+  padding: 7px 9px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+/*******************************************/
+/**********  Product Details Page  *************/
+.Product {
+  display: flex;
+  flex-direction: row;
+}
+
+.ProductView {
+  display:flex;
+  flex-direction: column;
+  margin: 0px 100px 0px 0px;
+}
+
+/*.ProductDetails {
+  
+}*/
+
+.ItemTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ProductImage {
+  width: 475px;
+  height: 350px;
+}
+
+.ProductText {
+  text-align: left;
+  background: #363636;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#SizeGuide {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-decoration-line: underline;
+  color: white;
+  text-align: right;
+}
+
+.OptionButtons {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.ItemButton {
+  border: 2px solid #3E85A3;
+  background-color: white;
+  color: #3E85A3;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  list-style-type: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition-duration: 0.3s;
+}
+
+.ItemButton:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+  color: white;
+  background-color: #3E85A3;
+}
+
+
+.AddToCart {
+  border: none;
+  text-decoration-color: #fff;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  list-style-type: none;
+  background-color: #3E85A3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.AddToCart:hover {
+  transition-duration: 0.3s;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+}
+
+#quant {
+  height: 30px;
+  width: 50px;
+  border-radius: 5px;
+  border: 2px solid #3E85A3;
+  background-color: white;
+  color: #3E85A3;
+}
+
+.Final {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 20px 0px 0px 0px;
+}
+
+.Final p {
+  margin: 20px; 
+}
+
+.Final label {
+  margin: 5px;
+}
+
+
+.Options {
+  display: flex;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.Options input[type="radio"] {
+  display: none;
+}
+
+.Options label {
+  border: 2px solid #3E85A3;
+  background-color: white;
+  color: #3E85A3;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  list-style-type: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition-duration: 0.3s;
+}
+
+.Options input[type="radio"]:checked + label {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+  color: white;
+  background-color: #3E85A3;
+}
+
+.Options label:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+  color: white;
+  background-color: #3E85A3;
+}
+
+/*.Options label:checked {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+  color: white;
+  background-color: #3E85A3;
+}*/
+
+
+/*******************************************/
+/*******************  Carousel  ******************/
+.Carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 300px;
+}
+
+.CarouselItem1 {
+  width: 300px;
+  height: 300px;
+  margin:5px;
+}
+
+.CarouselImage1 {
+  object-fit: scale-down;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+
+#Carousel {
+  display: flex;
+  flex-direction: column;
+  background-color: #363636;
+  align-items: center;
+}
+
+.Carousel i {
+  margin: 20px;
+}
+
+/*******************************************/
+/********************* Browse Items + Filter **********************/
+
+.Browse {
+  display: flex;
+}
+
+
+
+
+/*******************************************/
+/********************* Filter **********************/ 
+
+.Filter {
+  background: #3F84A2;
+  border-radius: 5px;
+  padding: 20px;
+  height: 350px;
+}
+
+.FilterItem {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+
+
+
+
+/*******************************************/
+/********************* Browsable Items **********************/ 
+
+.AllItems {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ItemContainer {
+  text-align: center;
+}
+
+.BrowsableItem {
+  width: 275px;
+  width: 275px;
+  margin: 50px 50px 0px 50px;
+}
+
+.CardInfo {
+  position: relative;
+}
+
+
+.ItemText1 {
+  position: absolute;
+  bottom: 4px;
+  left: 50px;
+  padding: 5px;
+  background: rgba(80, 80, 80, 0.75);
+  border-radius: 0px 5px 0px 0px;
+}
+
+.ItemText2 {
+  position: absolute;
+  bottom: 8px;
+  right: 56px;
+  padding: 3px;
+  background-color: #2E2E2E;
+  border-radius: 10px;
+}
+
+.checked {
+  color: orange;
+}
+
+
+/*******************************************/
+/************* Shopping Cart ***************/
+
+.CartTopper {
+  display: flex;
+  flex-direction: row;
+  background-color: #363636;
+  justify-content: space-around;
+  align-items: center;
+  /*width: 65%;*/
+}
+
+.ShoppingCartCenter {
+  display: flex;
+  flex-direction: column;
+}
+
+#ShoppingCart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2E2E2E;
+  
+}
+
+.ShoppingButton {
+  border: none;
+  text-decoration-color: #fff;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  list-style-type: none;
+  background-color: #3E84A2;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.ShoppingCartTimeline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.CartItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 5px;
+  width: 65%;
+  margin: 10px;
+}
+
+.CartItemDescription {
+  display: flex;
+  flex-direction: column;
+  background-color: #363636;
+  border-radius: 5px;
+  margin: 10px;
+  align-items: center;
+}
+
+#CartItemVariables {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#CartItemVariables p {
+  margin: 5px;
+}
+
+#CartItemChange {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#CartItemChange p {
+  margin: 5px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+#CartItemChange p:hover {
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+
+
+
+
+
+/*******************************************/
+/******* Lower Body *******/
+.LowerBody {
+  /*width: 100vw;*/
+  background-color: #2E2E2E;
+  align-items: center;
+}
+
+.MainPageCard {
+  display: flex;
+  flex-direction: column;
+  background: rgba(85, 85, 85, 0.9);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  text-align: center;
+  height: 313px;
+}
+
+.MainCard1 {
+  margin: 30px;
+  padding: 20px;
+  min-width: 300px;
+}
+
+.MainCard2 {
+  margin: 30px;
+  padding: 20px;
+  min-width: 300px;
+}
+
+.MainCard3 {
+  margin: 30px;
+  padding: 20px;
+  min-width: 300px;
+}
+
+.CardButton {
+  border: none;
+  text-decoration-color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  list-style-type: none;
+  background-color: #3E85A3;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.CardButton:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+}
+
+
+/*******************************************/
+/************ Footer ************/
+.Footer {
+  display:flex;
+  flex-direction: column;
+  background-color: #363636;
+  width: 100%;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.EmailSignUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1vw;
+  width: 50%
+}
+
+.EmailSignUp input#email {
+  margin: 10px 10px 0px 10px;
+  height: 30px;
+  width: 300px;
+}
+
+/*#emailForm {
+  display:flex;
+  width: 50vw;
+  justify-content: space-between;
+  padding: 1vw;
+  align-items: center;
+}*/
+
+
+.FooterActual {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.FooterPages {
+  display: flex;
+  flex-direction: column;
+  padding: 2vw;
+  align-items: flex-start;
+  opacity: .8;
+}
+
+.FooterFont {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: white;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Muddy Paws Adventure Gear</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Epilogue&family=Roboto&display=swap" 
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+
+
+    <!--NAVIGATION-->
+    <body>
+        <div class="RightFlex">
+            <img src="Assets/Icons/menu-white-48dp.svg" class="Menu" alt="Menu">
+            <p class="Title">Muddy Paws</p>
+            <ul class="Nav">
+                <li><button class="HomeButton NavLinks"><a href="index.html">Home</a></button></li>
+                <li><button class="Navbutton NavLinks"><a href="BrowseAll.html">Browse All</a></button></li>
+                <li><button class="Navbutton NavLinks"><a href="">Dog</a></button></li>
+                <li><button class="Navbutton NavLinks"><a href="">Cat</a></button></li>
+                <li><button class="Navbutton NavLinks"><a href="">Accessories</a></button></li>
+            </ul> 
+            <img class="ProfileButton" src="Assets/Icons/account_circle-white-48dp.svg" alt="Profile">
+        </div>
+        <div class="UpperBody">
+            <div class="SearchCart">
+                <div class="Search">
+                    <i class="SearchIcon"><img src="Assets/Icons/search-white-24dp.svg" alt="Search"></i>
+                    <!-- change type to "search??"-->
+                    <input type="text" placeholder="Search..">
+                </div>
+                <button class="Navbutton NavLinks CartButton MainFont"><a href="ShoppingCart.HTML">Your Cart</a>
+                <img src="Assets/Icons/shopping_cart-white-24dp.svg" alt="Shopping Cart">
+                <p id="cartCount">0</p></button>
+            </div>
+        </div>
+
+
+
+
+        <div class="BodyContainer">
+            <div class="Product">
+                <div class="ProductView">
+                    <div class="ItemTitle">
+                        <!-- Title and Price here-->
+                        <p class="MainHeaderFont" id="ProductTitle">Astro Pack</p>
+                        <p class="MainHeaderFont">$27</p>
+                    </div>
+                    <div class="ImageDisplay"> 
+                        <div class="fill">
+                            <img class="ProductImage" id="CurrentImage" src="Assets/Images/AstroPack.jpg" alt="Cat inside backpack looking through Spaceship like window" 
+                            title="Astro Pack">
+                        </div>
+                        <div class="CarouselItem">
+                            <i><img src="Assets/Icons/keyboard_arrow_left-white-48dp.svg" class="LeftArrow" alt="Left Arrow"></i>
+                            <i><img src="Assets/Icons/keyboard_arrow_right-white-48dp.svg" class="RightArrow" alt="Right Arrow"></i>
+                        </div>
+                        <!-- Image, arrows, and review thing, if possible, here-->
+                    </div>
+                </div>
+                <div class="ProductDetails">
+                    <div class="ProductText">
+                        <!--Description + Size guide link-->
+                        <p class="MainHeaderFont">Description:</p>
+                        <p class="MainFont">
+                            MaX Cat Carrier allows you to bring your furry best-<br>
+                            friend with you wherever you go! Secure, spacious<br>
+                            enclosure allows for comfort for the kitty, and the <br>
+                            space-station style window gets them a view!</p>  
+                    </div>
+                    <p id="SizeGuide">Size Guide</p>    
+                    <div class="">
+                        <!--Buttons-->
+                        <div class="OptionButtons">
+                            <p class="MainFont">Size:</p>
+                            <ul class="Options">
+                                <li>
+                                    <input type="radio" id="Tiny" value="Tiny" name="size" onclick="setSize('Astro Pack', 'Strawberry', 'T')">
+                                    <label class="MainFont" id="Tiny" for="Tiny">Tiny</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="Small" value="Small" name="size" onclick="setSize('Astro Pack', 'Blackberry', 'S')">
+                                    <label class="MainFont" for="Small">Small</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="Medium" value="Medium" name="size" onclick="setSize('Astro Pack', 'Fire Orange', 'M')">
+                                    <label class="MainFont" for="Medium">Medium</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="Large" value="Large" name="size" onclick="setSize('Astro Pack', 'Crazyberry', 'L')">
+                                    <label class="MainFont" for="Large">Large</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="OptionButtons">
+                            <p class="MainFont">Color:</p>
+                            <ul class="Options">
+                                <!--Set paths and text for color changes within setColor() functions-->
+                                <li>
+                                    <input type="radio" id="Strawberry" value="Strawberry" name="color" onclick="setColor('Images/AstroPack.jpg', 'Astro Pack', 'Strawberry', '')">
+                                    <label class="MainFont" for="Strawberry">Strawberry</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="Blackberry" value="Blackberry" name="color"  onclick="setColor('Images/AstroPack.jpg', 'Astro Pack', 'Blackberry', '')">
+                                    <label class="MainFont" for="Blackberry">Blackberry</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="Fire Orange" value="Fire Orange" name="color"  onclick="setColor('Images/AstroPack.jpg', 'Astro Pack', 'Fire Orange', '')">
+                                    <label class="MainFont" for="Fire Orange">Fire Orange</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="Crazyberry" value="Crazyberry" name="color"  onclick="setColor('Images/AstroPack.jpg', 'Astro Pack', 'Crazyberry', '')">
+                                    <label class="MainFont" for="Crazyberry">Crazyberry</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="Final">
+                        <!-- Quantity and Add to cart-->
+                        <p>
+                            <p class="MainFont" id="ItemTotal">$27</p>
+                            <label class="MainFont">Quantity</label>
+                            <select id="quant">
+                                <option value = "1">1</option>
+                                <option value = "2">2</option>
+                                <option value = "3">3</option>
+                                <option value = "4">4</option>
+                                <option value = "5">5</option>
+                                <option value = "6">6</option>
+                                <option value = "7">7</option>
+                                <option value = "8">8</option>
+                                <option value = "9">9</option>
+                                <option value = "10">10</option>
+                            </select>
+                        </p>
+                        <input type="button" value="Add To Cart" class="AddToCart MainHeaderFont" onclick="addToCart()">
+                    </div>
+                </div>
+            </div>
+            <div class="Footer">
+                <div class="EmailSignUp">
+                    <p class="MainFont">Sign up for Muddy Emails</p>
+                    <p class="MainFont">Outdoor events, deals and stories</p>
+                    <label for="email" form="emailForm" class="MainFont"></label>
+                    <input type="email" placeholder="Enter your email address" id="email">
+                    <!--<label for="emailSubmission" form="emailForm"></label>-->
+                    <input type="submit" class="CardButton MainFont" value="Sign me up!" id="emailSubmission">
+                </div>
+                <div class="FooterActual">
+                    <div class="FooterPages">
+                        <p class="MainHeaderFont"></p>
+                        <a class="FooterFont" href="">About</a>
+                        <a class="FooterFont" href="">Blog</a>
+                        <a class="FooterFont" href="">Careers</a>
+                        <a class="FooterFont" href="">Affiliate Program</a>
+                        <a class="FooterFont" href="">Site Map</a>
+                    </div>
+                    <div class="FooterPages">
+                        <p class="MainHeaderFont"></p>
+                        <a class="FooterFont" href="">Browse All</a>
+                        <a class="FooterFont" href="">Dog</a>
+                        <a class="FooterFont" href="">Cat</a>
+                        <a class="FooterFont" href="">Accessories</a>
+                        <a class="FooterFont" href="">Flyer</a>
+                        <a class="FooterFont" href="">Deals</a>
+                    </div>
+                    <div class="FooterPages">
+                        <p class="MainHeaderFont"></p>
+                        <a class="FooterFont" href="">Help/FAQ</a>
+                        <a class="FooterFont" href="">Shipping</a>
+                        <a class="FooterFont" href="">Returns & Exchanges</a>
+                        <a class="FooterFont" href="">Find a Store</a>
+                        <a class="FooterFont" href="">Contact Us</a>
+                        <a class="FooterFont" href="">Feedback</a>
+                        <a class="FooterFont" href=""></a>
+                    </div>
+                    <div class="FooterPages">
+                        <p class="MainHeaderFont"></p>
+                        <a class="FooterFont" href="">Privacy Policy</a>
+                        <a class="FooterFont" href="">Terms & Conditions</a>
+                        <a class="FooterFont" href="">Return Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
