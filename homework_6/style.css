@@ -677,19 +677,19 @@ a {
   margin: 5px;
 }
 
-#CartItemChange {
+.CartItemChange {
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
 }
 
-#CartItemChange p {
+.CartItemChange p {
   margin: 5px;
   font-size: 16px;
   line-height: 22px;
 }
 
-#CartItemChange p:hover {
+.CartItemChange p:hover {
   cursor: pointer;
   text-decoration-line: underline;
 }
