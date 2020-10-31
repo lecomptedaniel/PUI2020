@@ -6,7 +6,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Epilogue&family=Roboto&display=swap" 
         rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script type="text/javascript" src="main.js"></script>
+        <script src="main.js"></script>
     </head>
 
 
@@ -16,11 +16,11 @@
             <img src="Assets/Icons/menu-white-48dp.svg" class="Menu" alt="Menu">
             <p class="Title">Muddy Paws</p>
             <ul class="Nav">
-                <li><button class="HomeButton NavLinks"><a href="index.html">Home</a></button></li>
-                <li><button class="Navbutton NavLinks"><a href="BrowseAll.html">Browse All</a></button></li>
-                <li><button class="Navbutton NavLinks"><a href="">Dog</a></button></li>
-                <li><button class="Navbutton NavLinks"><a href="">Cat</a></button></li>
-                <li><button class="Navbutton NavLinks"><a href="">Accessories</a></button></li>
+                <li><a class="HomeButton NavLinks" href="index.html">Home</a></li>
+                <li><a class="Navbutton NavLinks" href="BrowseAll.html">Browse All</a></li>
+                <li><a class="Navbutton NavLinks" href="">Dog</a></li>
+                <li><a class="Navbutton NavLinks" href="">Cat</a></li>
+                <li><a class="Navbutton NavLinks" href="">Accessories</a></li>
             </ul> 
             <img class="ProfileButton" src="Assets/Icons/account_circle-white-48dp.svg" alt="Profile">
         </div>
@@ -31,9 +31,11 @@
                     <!-- change type to "search??"-->
                     <input type="text" placeholder="Search..">
                 </div>
-                <button class="Navbutton NavLinks CartButton MainFont"><a href="ShoppingCart.HTML">Your Cart</a>
-                <img src="Assets/Icons/shopping_cart-white-24dp.svg" alt="Shopping Cart">
-                <p id="cartCount">0</p></button>
+                <div class="Navbutton NavLinks CartButton MainFont">
+                    <a  href="ShoppingCart.html">Your Cart</a>
+                    <img src="Assets/Icons/shopping_cart-white-24dp.svg" alt="Shopping Cart">
+                    <p id="cartCount">0</p>
+                </div>
             </div>
         </div>
 
@@ -99,19 +101,19 @@
                             <ul class="Options">
                                 <!--Set paths and text for color changes within setColor() functions-->
                                 <li>
-                                    <input type="radio" id="Strawberry" value="Strawberry" name="color" onclick="setColor('Images/AstroPack.jpg', 'Astro Pack', 'Strawberry', '')">
+                                    <input type="radio" id="Strawberry" value="Strawberry" name="color" onclick="setColor('Assets/Images/AstroPack.jpg', 'Astro Pack', 'Strawberry', '')">
                                     <label class="MainFont" for="Strawberry">Strawberry</label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="Blackberry" value="Blackberry" name="color"  onclick="setColor('Images/AstroPack.jpg', 'Astro Pack', 'Blackberry', '')">
+                                    <input type="radio" id="Blackberry" value="Blackberry" name="color"  onclick="setColor('Assets/Images/AstroPack.jpg', 'Astro Pack', 'Blackberry', '')">
                                     <label class="MainFont" for="Blackberry">Blackberry</label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="Fire Orange" value="Fire Orange" name="color"  onclick="setColor('Images/AstroPack.jpg', 'Astro Pack', 'Fire Orange', '')">
+                                    <input type="radio" id="Fire Orange" value="Fire Orange" name="color"  onclick="setColor('Assets/Images/AstroPack.jpg', 'Astro Pack', 'Fire Orange', '')">
                                     <label class="MainFont" for="Fire Orange">Fire Orange</label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="Crazyberry" value="Crazyberry" name="color"  onclick="setColor('Images/AstroPack.jpg', 'Astro Pack', 'Crazyberry', '')">
+                                    <input type="radio" id="Crazyberry" value="Crazyberry" name="color"  onclick="setColor('Assets/Images/AstroPack.jpg', 'Astro Pack', 'Crazyberry', '')">
                                     <label class="MainFont" for="Crazyberry">Crazyberry</label>
                                 </li>
                             </ul>
@@ -122,7 +124,7 @@
                         <p>
                             <p class="MainFont" id="ItemTotal">$27</p>
                             <label class="MainFont">Quantity</label>
-                            <select id="quant">
+                            <select id="Quantity">
                                 <option value = "1">1</option>
                                 <option value = "2">2</option>
                                 <option value = "3">3</option>

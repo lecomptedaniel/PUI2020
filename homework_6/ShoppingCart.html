@@ -6,7 +6,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Epilogue&family=Roboto&display=swap" 
         rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script type="text/javascript" src="main.js"></script>
+        <script src="main.js"></script>
     </head>
 
 
@@ -16,11 +16,11 @@
             <img src="Assets/Icons/menu-white-48dp.svg" class="Menu" alt="Menu">
             <p class="Title">Muddy Paws</p>
             <ul class="Nav">
-                <li><button class="HomeButton NavLinks"><a href="index.html">Home</a></button></li>
-                <li><button class="Navbutton NavLinks"><a href="BrowseAll.html">Browse All</a></button></li>
-                <li><button class="Navbutton NavLinks"><a href="">Dog</a></button></li>
-                <li><button class="Navbutton NavLinks"><a href="">Cat</a></button></li>
-                <li><button class="Navbutton NavLinks"><a href="">Accessories</a></button></li>
+                <li><a class="HomeButton NavLinks" href="index.html">Home</a></li>
+                <li><a class="Navbutton NavLinks" href="BrowseAll.html">Browse All</a></li>
+                <li><a class="Navbutton NavLinks" href="">Dog</a></li>
+                <li><a class="Navbutton NavLinks" href="">Cat</a></li>
+                <li><a class="Navbutton NavLinks" href="">Accessories</a></li>
             </ul> 
             <img class="ProfileButton" src="Assets/Icons/account_circle-white-48dp.svg" alt="Profile">
         </div>
@@ -31,8 +31,11 @@
                     <!-- change type to "search??"-->
                     <input type="text" placeholder="Search..">
                 </div>
-                <button class="Navbutton NavLinks CartButton MainFont"><a href="ShoppingCart.HTML">Your Cart</a>
-                <img src="Assets/Icons/shopping_cart-white-24dp.svg" alt="Shopping Cart"><p id="cartCount">0</p></button>
+                <div class="Navbutton NavLinks CartButton MainFont">
+                    <a  href="ShoppingCart.html">Your Cart</a>
+                    <img src="Assets/Icons/shopping_cart-white-24dp.svg" alt="Shopping Cart">
+                    <p id="cartCount">0</p>
+                </div>
             </div>
         </div>
 
@@ -66,14 +69,14 @@
                 </div>
                 <div class="CartItemDescription">
                     <p class="MainHeaderFont">Special Bandana</p>
-                    <div class="container" id="CartItemVariables">
+                    <div class="container CartItemVariables">
                         <p class="MainFont">Tiny</p>
                         <p class="MainFont">Blackcherry</p>
                         <input type="button" class="CardButton MainFont" value="Change">
                     </div>
                     <p>
                         <label class="MainFont">Quantity</label>
-                        <select id="quant">
+                        <select class="quant">
                             <option value = "1">1</option>
                             <option value = "2">2</option>
                             <option value = "3">3</option>
@@ -99,14 +102,14 @@
                 </div>
                 <div class="CartItemDescription">
                     <p class="MainHeaderFont">Special Bandana</p>
-                    <div class="container" id="CartItemVariables">
+                    <div class="container CartItemVariables">
                         <p class="MainFont" id="ItemSize">Tiny</p>
                         <p class="MainFont" id="ItemColor">Blackcherry</p>
                         <input type="button" class="CardButton MainFont" value="Change">
                     </div>
                     <p>
                         <label class="MainFont">Quantity</label>
-                        <select id="quant">
+                        <select class="quant">
                             <option value = "1">1</option>
                             <option value = "2">2</option>
                             <option value = "3">3</option>

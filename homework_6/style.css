@@ -95,6 +95,7 @@ minimum 1200px -- and below that perhaps pick and choose what menu items to disp
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
   position: sticky;
   top: 0;
   z-index:5;
@@ -414,7 +415,16 @@ a {
   box-shadow: 0 8px 16px rgba(0,0,0,0.6);
 }
 
-#quant {
+#Quantity {
+  height: 30px;
+  width: 50px;
+  border-radius: 5px;
+  border: 2px solid #3E85A3;
+  background-color: white;
+  color: #3E85A3;
+}
+
+.quant {
   height: 30px;
   width: 50px;
   border-radius: 5px;
@@ -657,13 +667,13 @@ a {
   align-items: center;
 }
 
-#CartItemVariables {
+.CartItemVariables {
   margin: 10px;
   padding: 5px;
   border-radius: 5px;
 }
 
-#CartItemVariables p {
+.CartItemVariables p {
   margin: 5px;
 }
 

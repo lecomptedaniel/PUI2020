@@ -93,7 +93,7 @@ function setColor(ImagePath, name, color) {
     document.getElementById("ProductTitle").innerHTML = CurrentImage.title;
 }
 
-function setSize(name, ColorText, size) {
+function setSize(name, size) {
     CurrentProduct.size = size;
     var CurrentImage = document.getElementById('CurrentImage');
     //Set inner html to title, and change picture here
@@ -156,7 +156,7 @@ function addToCart() {
     var product = new Product(name, size, color)
 
     //Quantity addition! (maybe check if number is >1, then go here? Else go through above?)
-    var quant = document.getElementById('quant').value;
+    var quant = document.getElementById('Quantity').value;
     console.log(quant);
     var quantCount = parseInt(quant);
     for(var i = 0; i < quantCount; i++){

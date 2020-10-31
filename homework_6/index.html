@@ -6,18 +6,18 @@
         <link href="https://fonts.googleapis.com/css2?family=Epilogue&family=Roboto&display=swap" 
         rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script type="text/javascript" src="main.js"></script>
+        <script src="main.js"></script>
     </head>
     <body>
         <div class="RightFlex">
             <img src="Assets/Icons/menu-white-48dp.svg" class="Menu" alt="Menu">
             <p class="Title">Muddy Paws</p>
             <ul class="Nav">
-                <li><button class="HomeButton NavLinks"><a href="index.html">Home</a></button></li>
-                <li><button class="Navbutton NavLinks"><a href="BrowseAll.html">Browse All</a></button></li>
-                <li><button class="Navbutton NavLinks"><a href="index.html">Dog</a></button></li>
-                <li><button class="Navbutton NavLinks"><a href="index.html">Cat</a></button></li>
-                <li><button class="Navbutton NavLinks"><a href="index.html">Accessories</a></button></li>
+                <li><a class="HomeButton NavLinks" href="index.html">Home</a></li>
+                <li><a class="Navbutton NavLinks" href="BrowseAll.html">Browse All</a></li>
+                <li><a class="Navbutton NavLinks" href="">Dog</a></li>
+                <li><a class="Navbutton NavLinks" href="">Cat</a></li>
+                <li><a class="Navbutton NavLinks" href="">Accessories</a></li>
             </ul> 
             <img class="ProfileButton" src="Assets/Icons/account_circle-white-48dp.svg" alt="Profile"><a href=""></a>
         </div>
@@ -28,16 +28,19 @@
                     <!-- change type to "search??"-->
                     <input type="text" placeholder="Search..">
                 </div>
-                <button class="Navbutton NavLinks CartButton MainFont"><a href="ShoppingCart.HTML">Your Cart</a>
-                <img src="Assets/Icons/shopping_cart-white-24dp.svg" alt="Shopping Cart"><p id="cartCount">0</p></button>
+                <div class="Navbutton NavLinks CartButton MainFont">
+                    <a  href="ShoppingCart.html">Your Cart</a>
+                    <img src="Assets/Icons/shopping_cart-white-24dp.svg" alt="Shopping Cart">
+                    <p id="cartCount">0</p>
+                </div>
             </div>
         </div>
         <div class="BodyContainer">
-            <!-- FLEX ROW 1 -- Splash and Our Story-->
+            <!-- FLEX ROW 1 - Splash and Our Story-->
             <div class="FlexRow">
                 <div class="fill">
                     <img src="Assets/Images/CoverPhoto.jpg" class="SplashImage" alt="White and Brown Border Collie on Mountain" 
-                    title="Home Splash Photo" width=700px height=520px>
+                    title="Home Splash Photo" width="700" height="520">
                 </div>
                 <div class="IntroText">
                     <h1 class="MainHeaderFont">Our Story</h1>
@@ -50,7 +53,7 @@
                         human hiker pals!</p>
                 </div>
             </div>
-            <!-- FLEX ROW 2 -- 3 Cards -->
+            <!-- FLEX ROW 2 - 3 Cards -->
             <div class="FlexRow">
                 <div class="MainPageCard MainCard1">
                     <h1 class="MainHeaderFont">Our Products</h1>
