@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <title>Muddy Paws-Shopping Cart</title>
+        <meta charset="utf-8">
         <link href="style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Epilogue&family=Roboto&display=swap" 
         rel="stylesheet">
@@ -42,10 +43,10 @@
 
         
         <div class="CartTopper">
-            <button class="BackButton MainFont">
+            <div class="BackButton MainFont">
                 <i><img src="Assets/Icons/keyboard_arrow_left-white-18dp.svg" alt="Back Arrow"></i>
                 <a href="BrowseAll.html">Browse</a>
-            </button>
+            </div>
             <div class="ShoppingCartCenter">
                 <p class="MainHeaderFont">Your Cart</p>
                 <div class="ShoppingCartTimeline">
@@ -75,7 +76,7 @@
             <div class="EmailSignUp">
                 <p class="MainFont">Sign up for Muddy Emails</p>
                 <p class="MainFont">Outdoor events, deals and stories</p>
-                <label for="email" form="emailForm" class="MainFont"></label>
+                <label for="email" class="MainFont"></label>
                 <input type="email" placeholder="Enter your email address" id="email">
                 <!--<label for="emailSubmission" form="emailForm"></label>-->
                 <input type="submit" class="CardButton MainFont" value="Sign me up!" id="emailSubmission">
@@ -118,73 +119,3 @@
         </div>
     </body>
 </html>
-
-
-
-
-<!-- <div class="CartItem">
-    <div class="fill">
-        <img src="Assets/Images/SpecialBandana.jpg" alt="Special Bandana" width="200" height="200">
-    </div>
-    <div class="CartItemDescription">
-        <p class="MainHeaderFont">Special Bandana</p>
-        <div class="container CartItemVariables">
-            <p class="MainFont">Tiny</p>
-            <p class="MainFont">Blackcherry</p>
-            <input type="button" class="CardButton MainFont" value="Change">
-        </div>
-        <div>
-            <label for="quantity" class="MainFont">Quantity</label>
-            <select class="quant">
-                <option value = "1">1</option>
-                <option value = "2">2</option>
-                <option value = "3">3</option>
-                <option value = "4">4</option>
-                <option value = "5">5</option>
-                <option value = "6">6</option>
-                <option value = "7">7</option>
-                <option value = "8">8</option>
-                <option value = "9">9</option>
-                <option value = "10">10</option>
-            </select>
-            <p class="MainFont">$29</p>
-        </div>
-        <div class="container CartItemChange">
-            <p class="MainFont">Delete</p>
-            <p class="MainFont">Save for later</p>
-        </div>
-    </div>
-</div>
-<div class="CartItem">
-    <div class="fill">
-        <img src="Assets/Images/SpecialBandana.jpg" alt="Special Bandana" width="200" height="200">
-    </div>
-    <div class="CartItemDescription">
-        <p class="MainHeaderFont">Special Bandana</p>
-        <div class="container CartItemVariables">
-            <p class="MainFont" id="ItemSize">Tiny</p>
-            <p class="MainFont" id="ItemColor">Blackcherry</p>
-            <input type="button" class="CardButton MainFont" value="Change">
-        </div>
-        <div>
-            <label class="MainFont">Quantity</label>
-            <select class="quant">
-                <option value = "1">1</option>
-                <option value = "2">2</option>
-                <option value = "3">3</option>
-                <option value = "4">4</option>
-                <option value = "5">5</option>
-                <option value = "6">6</option>
-                <option value = "7">7</option>
-                <option value = "8">8</option>
-                <option value = "9">9</option>
-                <option value = "10">10</option>
-            </select>
-            <p class="MainFont" id="ItemTotal">$29</p>
-        </div>
-        <div class="container CartItemChange">
-            <p class="MainFont">Delete</p>
-            <p class="MainFont">Save for later</p>
-        </div>
-    </div>
-</div> -->

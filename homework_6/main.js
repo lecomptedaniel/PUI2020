@@ -1,6 +1,6 @@
 //
 var productArr = [];
-console.log(productArr);
+//console.log(productArr);
 var num = 0;
 var Cart = [];
 
@@ -115,7 +115,7 @@ function addToCart() {
 
 
     //Quantities -- check with current setting (should be blank)
-    console.log(quantity);
+    //console.log(quantity);
 
     //Pull value from input
     var quantities = document.getElementById('Quantity').value;
@@ -124,7 +124,7 @@ function addToCart() {
     quantity = parseInt(quantities);
 
     //Check if that worked
-    console.log('Actual quantity: ' + quantity);
+    //console.log('Actual quantity: ' + quantity);
 
 
     //If no selected size, please pick one!
@@ -132,16 +132,16 @@ function addToCart() {
         alert('Please pick a quantity!');
     }
 
-    console.log('Current cart: ' + productArr);
+    //console.log('Current cart: ' + productArr);
     var product = new Product(name, size, color, quantity, image);
     productArr.push(product);
-    console.log('Current cart: ' + productArr);
+    //console.log('Current cart: ' + productArr);
 
     //Alert (or other JS) to show what was selected. Maybe turn this into a little pop up?
-    alert('Selected product size & color: ' + product.size + ' & ' + product.color + ' & ' + product.quantity)
+    //alert('Selected product size & color: ' + product.size + ' & ' + product.color + ' & ' + product.quantity)
 
 
-    console.log(productArr);
+    //console.log(productArr);
 
     //Update cart number display (on Cart Button) to number of items in cart (which is productArr Array)
     updateCartNumber();
@@ -158,52 +158,57 @@ function updateCartNumber() {
 
 //On the Cart page, this cues on the body:
 function checkoutPageLoad() {
-    alert('loaded checkoutPageLoad');
-    console.log('Cart Items:');
-    console.log(Cart);
+    //alert('loaded checkoutPageLoad');
+    //console.log('Cart Items:');
+    //console.log(Cart);
 
     //Grab our element by Id here.
     var CartDiv = document.getElementById('ShoppingCart');
-    console.log(CartDiv);
+    //console.log(CartDiv);
 
     //Action here to clear the inner HTML
     CartDiv.innerHTML = '';
 
     //Then use the JS -> to display each item? Maybe with nodes parent/child?
-    for(var i = 0; i < Cart.length; i++) {
-        console.log('i: ' + i);
-        console.log(Cart[i]);
-        var product = Cart[i];
-	    var productName = product.name;
-	    var productColor = product.color;
-	    var productSize = product.size;
-        var productQuantity = product.quantity;
-        var productImage = product.image;
+    if (Cart.length == 0) {
+        var CartDiv = document.getElementById('ShoppingCart');
+        CartDiv.innerHTML = `<p class="MainFont EmptyCart Container">Your Cart is Currently Empty</p>`
+    } else {
+        for(var i = 0; i < Cart.length; i++) {
+            //console.log('i: ' + i);
+            //console.log(Cart[i]);
+            var product = Cart[i];
+            var productName = product.name;
+            var productColor = product.color;
+            var productSize = product.size;
+            var productQuantity = product.quantity;
+            var productImage = product.image;
 
-        CartDiv.innerHTML += `
-        <div class="CartItem">
-        <div class="fill">
-            <img src="` + productImage + `" alt="Special Bandana" width="200" height="200">
-        </div>
-            <div class="CartItemDescription">
-                <p class="MainHeaderFont">` + productName + `</p>
-                <div class="container CartItemVariables">
-                    <p class="MainFont">` + productSize + `</p>
-                    <p class="MainFont">` + productColor + `</p>
-                    <input type="button" class="CardButton MainFont" value="Change">
-                </div>
-                <div class="container">
-                    <p class="MainFont">Quantity:</p>
-                    <p class="MainFont">` + productQuantity + `</p>                
-                </div>
-                
-                <p class="MainFont">$` + 29*productQuantity + `</p>
-                <div class="container CartItemChange">
-                    <p class="MainFont" onclick="Delete(` + i + `);">Delete</p>
-                    <p class="MainFont">Save for later</p>
-                </div>
+            CartDiv.innerHTML += `
+            <div class="CartItem">
+            <div class="fill">
+                <img src="` + productImage + `" alt="Special Bandana" width="200" height="200">
             </div>
-        </div>`
+                <div class="CartItemDescription">
+                    <p class="MainHeaderFont">` + productName + `</p>
+                    <div class="container CartItemVariables">
+                        <p class="MainFont">` + productSize + `</p>
+                        <p class="MainFont">` + productColor + `</p>
+                        <input type="button" class="CardButton MainFont" value="Change">
+                    </div>
+                    <div class="container">
+                        <p class="MainFont">Quantity:</p>
+                        <p class="MainFont">` + productQuantity + `</p>                
+                    </div>
+                    
+                    <p class="MainFont">$` + 29*productQuantity + `</p>
+                    <div class="container CartItemChange">
+                        <p class="MainFont" onclick="Delete(` + i + `);">Delete</p>
+                        <p class="MainFont">Save for later</p>
+                    </div>
+                </div>
+            </div>`
+        }
     }
 }
 

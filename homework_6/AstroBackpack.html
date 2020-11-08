@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <title>Muddy Paws - Astro Pack</title>
+        <meta charset="utf-8">
         <link href="style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Epilogue&family=Roboto&display=swap" 
         rel="stylesheet">
@@ -80,7 +81,7 @@
                             <ul class="Options">
                                 <li>
                                     <input type="radio" id="Tiny" value="Tiny" name="size" onclick="setSize('Astro Pack', 'T')">
-                                    <label class="MainFont" id="Tiny" for="Tiny">Tiny</label>
+                                    <label class="MainFont" for="Tiny">Tiny</label>
                                 </li>
                                 <li>
                                     <input type="radio" id="Small" value="Small" name="size" onclick="setSize('Astro Pack', 'S')">
@@ -109,8 +110,8 @@
                                     <label class="MainFont" for="Blackberry">Blackberry</label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="Fire Orange" value="Fire Orange" name="color"  onclick="setColor('Assets/Images/SpecialCone.jpg', 'Astro Pack', 'Fire Orange')">
-                                    <label class="MainFont" for="Fire Orange">Fire Orange</label>
+                                    <input type="radio" id="Fire Orange" value="FireOrange" name="color"  onclick="setColor('Assets/Images/SpecialCone.jpg', 'Astro Pack', 'Fire Orange')">
+                                    <label class="MainFont" for="FireOrange">Fire Orange</label>
                                 </li>
                                 <li>
                                     <input type="radio" id="Crazyberry" value="Crazyberry" name="color"  onclick="setColor('Assets/Images/AstroPack.jpg', 'Astro Pack', 'Crazyberry')">
@@ -125,18 +126,6 @@
                             <p class="MainFont" id="ItemTotal">$27</p>
                             <label for="Quantity" class="MainFont">Quantity</label>
                             <input type="number" id="Quantity" name="quantity" min="1" max="10">
-                            <!--<select id="Quantity">
-                                <option value = "1">1</option>
-                                <option value = "2">2</option>
-                                <option value = "3">3</option>
-                                <option value = "4">4</option>
-                                <option value = "5">5</option>
-                                <option value = "6">6</option>
-                                <option value = "7">7</option>
-                                <option value = "8">8</option>
-                                <option value = "9">9</option>
-                                <option value = "10">10</option>
-                            </select>-->
                         </div>
                         <input type="submit" value="Add To Cart" class="AddToCart MainHeaderFont" onclick="addToCart()">
                     </div>
@@ -146,7 +135,7 @@
                 <div class="EmailSignUp">
                     <p class="MainFont">Sign up for Muddy Emails</p>
                     <p class="MainFont">Outdoor events, deals and stories</p>
-                    <label for="email" form="emailForm" class="MainFont"></label>
+                    <label for="email" class="MainFont"></label>
                     <input type="email" placeholder="Enter your email address" id="email">
                     <!--<label for="emailSubmission" form="emailForm"></label>-->
                     <input type="submit" class="CardButton MainFont" value="Sign me up!" id="emailSubmission">
